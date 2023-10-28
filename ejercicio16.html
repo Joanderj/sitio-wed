@@ -5,8 +5,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/calendar-blue.css">
-
 	
 	<script type="text/javascript" src="js/ejercicio1.js"></script>
 	<script type="text/javascript" src="js/ejercicio2.js"></script>
@@ -48,7 +46,7 @@
             <ul class="dropdown" id="menu">
 
                 <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
+                    <a href="index.html" class="dropdown__link">
                         <img src="./assets/house.svg" class="dropdown__icon">
                         <span class="dropdown__span">Integrantes</span>
                     </a>
@@ -68,7 +66,7 @@
                         <ul class="dropdown__sub">
 
                             <li class="dropdown__li">
-                                <a href="" class="dropdown__anchor">ejercicio 1</a>
+                                <a href="ejercicio1.html" class="dropdown__anchor">ejercicio 1</a>
                             </li>
                             <li class="dropdown__li">
                                 <a href="ejercicio2.html" class="dropdown__anchor">ejercicio 2</a>
@@ -151,71 +149,26 @@
         </div>
 
     </nav>
-	<h3> Seccion 331 </h3>
-	<table></head>
-		<tr>
-		</td>
-		</tr>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Joander Enmanuel </li>
-			  <li> Apellido: Gallardo Petit </li>
-			  <li> Cedula: 30.362.468      </li>
-			  <li> Fecha de nacimiento: 11/02/2004      </li>
-			  <li> Email: joandergallardo1@gmail.com         </li>
-			  <li> Direccion: Guajira edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  eduardo chollet boada        </li>
-  
-	   </ul>
-  </fieldset>
-		</td>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Sebastian Francisco      </li>
-			  <li> Apellido: Mosquera Petit      </li>
-			  <li> Cedula: 30.767.102      </li>
-			  <li> Fecha de nacimiento: 24/02/2004      </li>
-			  <li> Email: SebastianM@gmail.com         </li>
-			  <li> Direccion: Los Cortijos edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-   <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  Los ilustres        </li>
-  
-	   </ul>
-  </fieldset>
-  </td>
-		<td><fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Brian Abraham     </li>
-			  <li> Apellido: Varga Carieles     </li>
-			  <li> Cedula: 30.208.802      </li>
-			  <li> Fecha de nacimiento: 10/11/2003      </li>
-			  <li> Email: elbrian856@gmail.com         </li>
-			  <li> Direccion: URB.La virginia edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  U.E.N Tomas liscano       </li>
-			  <li> Curso: Igiene y seguridad industrial,
-			  Duracion 3 meses      </li>
-	   </ul>
-  </fieldset>
-  </td>
-		</table>
-</html>
+<div class="ejer"><h3>Ejercicio 16</h3>
+    Crear un script que informe al usuario en que zona de la pantalla ha pulsado el ratón. Las zonas definidas son las siguientes: izquierda arriba, izquierda abajo, derecha arriba y derecha abajo. Para determinar el tamaño de la ventana del navegador, utilizar la función <code>tamanoVentanaNavegador()</code> proporcionada.
+    <div class="ventanaOculta" id="ejer16"><br></div>
+
+    <br><br><input class="boton" type="button" value="Ver solucion" onclick="ejercicio16();">
+</div>
+</article>
+<article id ="Capitulo 7" class="ejercicios">
+
+<div class="ejemplo">
+<p>Con este ejemplo podemos limitar el tamaño de caracteres de un <code>textarea</code></p>
+<pre class="boxCode">
+<span class="sfun">function</span> <span class="snamefun">limita</span>(<span class="sargs">maximoCaracteres</span>){
+<span class="svar">var</span> elemento <span class="simbolos">=</span> <span class="sdom">document</span>.<span class="sdom">getElementById</span>(<span class="sstring">"texto"</span>);
+<span class="sif">if</span>(elemento.<span class="sdom">value</span>.<span class="sdom">length</span> <span class="simbolos">>=</span> maximoCaracteres){
+<span class="sif">return</span> <span class="sbool">false</span>;
+}<span class="sif">else</span>{
+<span class="sif">return</span> <span class="sbool">true</span>;
+}
+
+}
+</pre>
+</body

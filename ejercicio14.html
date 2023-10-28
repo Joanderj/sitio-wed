@@ -5,8 +5,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/calendar-blue.css">
-
 	
 	<script type="text/javascript" src="js/ejercicio1.js"></script>
 	<script type="text/javascript" src="js/ejercicio2.js"></script>
@@ -48,7 +46,7 @@
             <ul class="dropdown" id="menu">
 
                 <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
+                    <a href="index.html" class="dropdown__link">
                         <img src="./assets/house.svg" class="dropdown__icon">
                         <span class="dropdown__span">Integrantes</span>
                     </a>
@@ -68,7 +66,7 @@
                         <ul class="dropdown__sub">
 
                             <li class="dropdown__li">
-                                <a href="" class="dropdown__anchor">ejercicio 1</a>
+                                <a href="ejercicio1.html" class="dropdown__anchor">ejercicio 1</a>
                             </li>
                             <li class="dropdown__li">
                                 <a href="ejercicio2.html" class="dropdown__anchor">ejercicio 2</a>
@@ -151,71 +149,25 @@
         </div>
 
     </nav>
-	<h3> Seccion 331 </h3>
-	<table></head>
-		<tr>
-		</td>
-		</tr>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Joander Enmanuel </li>
-			  <li> Apellido: Gallardo Petit </li>
-			  <li> Cedula: 30.362.468      </li>
-			  <li> Fecha de nacimiento: 11/02/2004      </li>
-			  <li> Email: joandergallardo1@gmail.com         </li>
-			  <li> Direccion: Guajira edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  eduardo chollet boada        </li>
-  
-	   </ul>
-  </fieldset>
-		</td>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Sebastian Francisco      </li>
-			  <li> Apellido: Mosquera Petit      </li>
-			  <li> Cedula: 30.767.102      </li>
-			  <li> Fecha de nacimiento: 24/02/2004      </li>
-			  <li> Email: SebastianM@gmail.com         </li>
-			  <li> Direccion: Los Cortijos edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-   <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  Los ilustres        </li>
-  
-	   </ul>
-  </fieldset>
-  </td>
-		<td><fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Brian Abraham     </li>
-			  <li> Apellido: Varga Carieles     </li>
-			  <li> Cedula: 30.208.802      </li>
-			  <li> Fecha de nacimiento: 10/11/2003      </li>
-			  <li> Email: elbrian856@gmail.com         </li>
-			  <li> Direccion: URB.La virginia edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  U.E.N Tomas liscano       </li>
-			  <li> Curso: Igiene y seguridad industrial,
-			  Duracion 3 meses      </li>
-	   </ul>
-  </fieldset>
-  </td>
-		</table>
-</html>
+<div class="ejer"><h3>Ejercicio 14</h3>
+    A partir de la página web proporcionada, completar el código JavaScript para que:
+   <ol>
+       <li>Cuando se pinche sobre el primer enlace, se oculte su sección relacionada</li>
+       <li>Cuando se vuelva a pinchar sobre el mismo enlace, se muestre otra vez esa sección de contenidos</li>
+       <li>Completar el resto de enlaces de la página para que su comportamiento sea idéntico al del primer enlace</li>
+       <li>Cuando una sección se oculte, debe cambiar el mensaje del enlace asociado (pista: propiedad <code>innerHTML</code>)</li>
+   </ol>
+   <div id="ejer14" class="ventanaOculta" name="divEjer14">
+           <p id="contenidos_1">[1] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+        <a id="enlace_1" href="#destino" onclick="muestraOculta('1'); return false;">Ocultar contenido</a>
+         <br/>     
+        <p id="contenidos_2">[2] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+        <a id="enlace_2" href="#divEjer14" onclick="muestraOculta('2'); return false;">Ocultar contenido</a>				     
+        <br/>
+        <p id="contenidos_3">[3] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+        <a id="enlace_3" href="#divEjer14" onclick="muestraOculta('3'); return false;">Ocultar contenido</a><br><br>
+   </div>
+   <br><a class="pag" href="ejercicio14.html" target="_blank">Ver página.</a>
+   <br><br><input class="boton" type="button" value="Ver solucion" onclick="ejercicio14();">
+</div>
+</body

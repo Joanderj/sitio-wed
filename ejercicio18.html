@@ -5,8 +5,10 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/calendar-blue.css">
-
+    <script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript" src="js/calendar-es.js"></script>
+	<script type="text/javascript" src="js/calendar-setup.js"></script>	
+    
 	
 	<script type="text/javascript" src="js/ejercicio1.js"></script>
 	<script type="text/javascript" src="js/ejercicio2.js"></script>
@@ -30,7 +32,7 @@
 </script>
 </head>
 <body>
-	    
+        
     <nav class="nav">
 
         <div class="nav__container">
@@ -48,7 +50,7 @@
             <ul class="dropdown" id="menu">
 
                 <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
+                    <a href="index.html" class="dropdown__link">
                         <img src="./assets/house.svg" class="dropdown__icon">
                         <span class="dropdown__span">Integrantes</span>
                     </a>
@@ -68,7 +70,7 @@
                         <ul class="dropdown__sub">
 
                             <li class="dropdown__li">
-                                <a href="" class="dropdown__anchor">ejercicio 1</a>
+                                <a href="ejercicio1.html" class="dropdown__anchor">ejercicio 1</a>
                             </li>
                             <li class="dropdown__li">
                                 <a href="ejercicio2.html" class="dropdown__anchor">ejercicio 2</a>
@@ -151,71 +153,39 @@
         </div>
 
     </nav>
-	<h3> Seccion 331 </h3>
-	<table></head>
-		<tr>
-		</td>
-		</tr>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Joander Enmanuel </li>
-			  <li> Apellido: Gallardo Petit </li>
-			  <li> Cedula: 30.362.468      </li>
-			  <li> Fecha de nacimiento: 11/02/2004      </li>
-			  <li> Email: joandergallardo1@gmail.com         </li>
-			  <li> Direccion: Guajira edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  eduardo chollet boada        </li>
-  
-	   </ul>
-  </fieldset>
-		</td>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Sebastian Francisco      </li>
-			  <li> Apellido: Mosquera Petit      </li>
-			  <li> Cedula: 30.767.102      </li>
-			  <li> Fecha de nacimiento: 24/02/2004      </li>
-			  <li> Email: SebastianM@gmail.com         </li>
-			  <li> Direccion: Los Cortijos edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-   <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  Los ilustres        </li>
-  
-	   </ul>
-  </fieldset>
-  </td>
-		<td><fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Brian Abraham     </li>
-			  <li> Apellido: Varga Carieles     </li>
-			  <li> Cedula: 30.208.802      </li>
-			  <li> Fecha de nacimiento: 10/11/2003      </li>
-			  <li> Email: elbrian856@gmail.com         </li>
-			  <li> Direccion: URB.La virginia edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  U.E.N Tomas liscano       </li>
-			  <li> Curso: Igiene y seguridad industrial,
-			  Duracion 3 meses      </li>
-	   </ul>
-  </fieldset>
-  </td>
-		</table>
-</html>
+<div class="ejemplo"><h3>Ejercicios 18</h3>
+    Aqui puedes ver la hora.
+    <div id="reloj">
+        <script type="text/javascript">reloj();</script>
+    </div>
+    <div>
+        <br>Calendario...
+        <br>Introduce la fecha pulsando sobre la imagen del calendario
+        <br><input type="text" name="date" id="fecha" readoly="readoly" />
+    </div>
+</div>
+<div class="ejer"><h3>Ejercicio 18</h3>
+    Mejorar el calendario creado añadiendo las opciones necesarias para que muestre el siguiente aspecto:
+    <div class="figura" id="figura_8_1">
+        <img src="" alt="Aspecto mejorado del calendario JavaScript">
+    </div>
+    <p><strong>Figura 8.1</strong> Aspecto mejorado del calendario JavaScript</p>
+   <ol>
+       <li>Que no se muestre el número de la semana en el calendario (pista: <code>weekNumbers</code>)</li>
+       <li>Modificar el formato en el que se muestra la fecha seleccionada. El formato original es <code>21 / 08 / 2007</code> (indicado como <code>%d / %m / %Y</code>). El formato deseado es <code>Martes, 21 de Agosto de 2007</code> (pistas: <code>%A, %B</code>)</li>
+       <li>El nuevo formato de fecha es mucho más agradable para los usuarios, pero más incómodo para los scripts que tienen que manejarlo. Afortunadamente, el calendario dispone de la posibilidad de guardar dos valores: un valor para mostrar a los usuarios y otro valor para que lo procesen los scripts. Cuando el usuario seleccione una fecha, la fecha con el formato original se debe almacenar en un campo oculto de formulario y el otro formato más largo debe mostrar al usuario en un elemento de tipo <code>&lt;span&gt;</code> (pistas: <code>displayArea, daFormat</code>)</li>
+   </ol>
+   <div id="ejer18" class="ventanaOculta">
+        <br>Calendario Modificado.
+
+        <br><br><input type="hidden" name="fecha" id="fecha" />
+        <span onmouseover="this.style.cursor='pointer'; this.style.cursor='hand'; this.style.backgroundColor='#ff8'; this.style.textDecoration='none';"
+              onmouseout="this.style.backgroundColor='#ffc'; this.style.textDecoration='underline';"
+        id="fecha_usuario">
+            Pincha aquí para seleccionar la fecha
+        </span>
+    </div>
+   <br><input class="boton" type="button" value="Ver solucion" onclick="ejercicio18();" />
+</div>
+
+</body

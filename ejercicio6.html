@@ -5,8 +5,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/calendar-blue.css">
-
 	
 	<script type="text/javascript" src="js/ejercicio1.js"></script>
 	<script type="text/javascript" src="js/ejercicio2.js"></script>
@@ -55,7 +53,7 @@
                 </li>
 
                 <li class="dropdown__list">
-                    <a href="#" class="dropdown__link">
+                    <a href="index.html" class="dropdown__link">
                         <img src="assets/projects.svg" class="dropdown__icon">
                         <span class="dropdown__span">ejercicios</span>
                         <img src="./assets/down.svg" class="dropdown__arrow">
@@ -68,7 +66,7 @@
                         <ul class="dropdown__sub">
 
                             <li class="dropdown__li">
-                                <a href="" class="dropdown__anchor">ejercicio 1</a>
+                                <a href="ejercicio1.html" class="dropdown__anchor">ejercicio 1</a>
                             </li>
                             <li class="dropdown__li">
                                 <a href="ejercicio2.html" class="dropdown__anchor">ejercicio 2</a>
@@ -81,9 +79,6 @@
                             </li>
                             <li class="dropdown__li">
                                 <a href="ejercicio5.html" class="dropdown__anchor">ejercicio 5</a>
-                            </li>
-                            <li class="dropdown__li">
-                                <a href="ejercicio6.html" class="dropdown__anchor">ejercicio 6</a>
                             </li>
                             <li class="dropdown__li">
                                 <a href="ejercicio7.html" class="dropdown__anchor">ejercicio 7</a>
@@ -151,71 +146,17 @@
         </div>
 
     </nav>
-	<h3> Seccion 331 </h3>
-	<table></head>
-		<tr>
-		</td>
-		</tr>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Joander Enmanuel </li>
-			  <li> Apellido: Gallardo Petit </li>
-			  <li> Cedula: 30.362.468      </li>
-			  <li> Fecha de nacimiento: 11/02/2004      </li>
-			  <li> Email: joandergallardo1@gmail.com         </li>
-			  <li> Direccion: Guajira edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  eduardo chollet boada        </li>
-  
-	   </ul>
-  </fieldset>
-		</td>
-		<td> <fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Sebastian Francisco      </li>
-			  <li> Apellido: Mosquera Petit      </li>
-			  <li> Cedula: 30.767.102      </li>
-			  <li> Fecha de nacimiento: 24/02/2004      </li>
-			  <li> Email: SebastianM@gmail.com         </li>
-			  <li> Direccion: Los Cortijos edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-   <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  Los ilustres        </li>
-  
-	   </ul>
-  </fieldset>
-  </td>
-		<td><fieldset>
-	   <legend> Datos personales </legend>
-	   <ul>
-			  <li> Nombre: Brian Abraham     </li>
-			  <li> Apellido: Varga Carieles     </li>
-			  <li> Cedula: 30.208.802      </li>
-			  <li> Fecha de nacimiento: 10/11/2003      </li>
-			  <li> Email: elbrian856@gmail.com         </li>
-			  <li> Direccion: URB.La virginia edo-portuguesa</li>
-	   </ul>
-  </fieldset>
-  <fieldset>
-	   <legend> Estudios Realizados </legend>
-	   <ul>
-			  <li> Escuela Secundaria: Bachiller En ciencia-
-			  U.E.N Tomas liscano       </li>
-			  <li> Curso: Igiene y seguridad industrial,
-			  Duracion 3 meses      </li>
-	   </ul>
-  </fieldset>
-  </td>
-		</table>
-</html>
+<div class="ejer"><h3>Ejercicio 6</h3>
+    El cálculo de la letra del Documento Nacional de Identidad (DNI) es un proceso matemático sencillo que se basa en obtener el resto de la división entera del número de DNI y el número 23. A partir del resto de la división, se obtiene la letra seleccionándola dentro de un array de letras.
+    <br><br>El array de letras es:
+    <br><br><code>var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];</code><br>
+    <br>Por tanto si el resto de la división es <code>0</code>, la letra del DNI es la <code>T</code> y si el resto es <code>3</code> la letra es la <code>A</code>. Con estos datos, elaborar un pequeño script que:
+    <ol>
+        <li>Almacene en una variable el número de DNI indicado por el usuario y en otra variable la letra del DNI que se ha indicado. (Pista: si se quiere pedir directamente al usuario que indique su número y su letra, se puede utilizar la función <code>prompt()</code>)</li>
+        <li>En primer lugar (y en una sola instrucción) se debe comprobar si el número es menor que <code>0</code> o mayor que <code>99999999</code>. Si ese es el caso, se muestra un mensaje al usuario indicando que el número proporcionado no es válido y el programa no muestra más mensajes.</li>
+        <li>Si el número es válido, se calcula la letra que le corresponde según el método explicado anteriormente.</li>
+        <li>Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es correcta. En otro caso, se muestra un mensaje indicando que el número y la letra de DNI son correctos.</li>
+    </ol>
+    <br><input class="boton" type="button" value="Ver solucion" onClick="ejercicio6();" />
+</div>
+</body
